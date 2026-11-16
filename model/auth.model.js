@@ -24,7 +24,7 @@ const authModel = new mongoose.Schema({
         type: String,
         enum: {
             values: ["user", "admin"],
-            message: "{VALUES} bunday qiymat qabul qilinmaydi"
+            message: "{VALUE} bunday qiymat qabul qilinmaydi"
         },
         default: "user"
     },

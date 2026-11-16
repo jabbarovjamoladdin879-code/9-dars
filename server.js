@@ -7,7 +7,7 @@ const categoryRouter = require("./router/category.routes")
 
 const app = express()
 app.use(cors())
-const POST = process.env.POST || 300
+const PORT = process.env.PORT || 3000
 
 
 // router
@@ -17,6 +17,6 @@ app.use("/api/category", categoryRouter)
 
 connectDB()
 
-app.listen(POST, () => {
-    console.log("Server is running at: " + POST);
+app.listen(PORT, () => {
+    console.log("Server is running at: " + PORT);
 })

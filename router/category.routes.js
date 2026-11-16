@@ -6,6 +6,6 @@ const router = Router()
 router.get("/get_all", getAllCategory)
 router.post("/add", addCategory)
 router.put("/update/:id", updateCategory)
-router.delete("delete/:id", deleteCategory)
+router.delete("/delete/:id", deleteCategory)
 
 module.exports = router
